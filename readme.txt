@@ -102,6 +102,7 @@ Thank you so much, we love you too.
 
 We have planned to add some features in the future.
 Some of these are:
+- mark conflicts somehow in the sudoku
 - fixed fields (for the example-files)
 - solver (to get hints)
 - hints ;)
