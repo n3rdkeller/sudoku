@@ -15,7 +15,9 @@ EMPTY_SUDOKU = [[0] * 9 for x in range(9)]
 X_VALUES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
 X_VALUES = list(enumerate(X_VALUES))
 if sys.stdin.encoding.lower() == "cp850":       # Windows Console
-    COLORS = {"clear": "", "bell": "", "yellow": "", "red": ""}
+    COLORS = {"clear": "", "bell": "", "grey": "",   \
+              "red": "", "green": "", "yellow": "",  \
+              "darkblue": "", "pink": "", "blue": "" }
 elif sys.stdin.encoding.lower() == "utf-8":     # Unix
     COLORS = {"clear": "\033[0m", \
                "bell": "\a", \
@@ -27,9 +29,13 @@ elif sys.stdin.encoding.lower() == "utf-8":     # Unix
                "pink": "\033[1;35m", \
                "blue": "\033[1;36m"}
 elif sys.stdin.encoding.lower() == "cp1252":    # IDLE
-    COLORS = {"clear": "", "bell": "", "yellow": "", "red": ""}
+    COLORS = {"clear": "", "bell": "", "grey": "",   \
+              "red": "", "green": "", "yellow": "",  \
+              "darkblue": "", "pink": "", "blue": "" }
 else:
-    COLORS = {"clear": "", "bell": "", "yellow": "", "red": ""}
+    COLORS = {"clear": "", "bell": "", "grey": "",   \
+              "red": "", "green": "", "yellow": "",  \
+              "darkblue": "", "pink": "", "blue": "" }
 
 
 # -----
